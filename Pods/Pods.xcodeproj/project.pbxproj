@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B92F41249EDA4D1E59BAF0B8A96F79A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5E84120B635CC3434FD1D71E56D59011 /* Pods-memorydeck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4DF340D4D777DCE00A9D9EAC2252C /* Pods-memorydeck-dummy.m */; };
+		68F93881BACF2244025F62FD114962E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6F1B66A86E2BC571DB10FF4147E92C31 /* Pods-memorydeckTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53BFFC39CEF6C05C38C1BC20E1E3F28C /* Pods-memorydeckTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DA6BCD63C57BE2CFA79F5C0B16A81F8 /* Pods-memorydeckUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D24B01636BF40E0DB479BDFD842A050C /* Pods-memorydeckUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FA68F225183CE863672D3556FB81240 /* Pods-memorydeckTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2438FBFE2722251C90FDF054E48D1B29 /* Pods-memorydeckTests-dummy.m */; };
+		8027467F77C852E099933824FEACECC2 /* Pods-memorydeck-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 358A1312D9DC71E786F8ADDAB6457A31 /* Pods-memorydeck-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A7D0F559246F55F9A180A7BFC1B0DF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DE79E685AF1C5954439E57110201BD4B /* Pods-memorydeckUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DB9DEF0B546ED73FC9E139F9C2CA9E /* Pods-memorydeckUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AE4DF340D4D777DCE00A9D9EAC2252C /* Pods-memorydeck-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-memorydeck-dummy.m"; sourceTree = "<group>"; };
+		2438FBFE2722251C90FDF054E48D1B29 /* Pods-memorydeckTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-memorydeckTests-dummy.m"; sourceTree = "<group>"; };
+		2652FE7F4C054AC96ED2EC8FB87209EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D174F0958EE2161D3EDB5B79EC1810 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		358A1312D9DC71E786F8ADDAB6457A31 /* Pods-memorydeck-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-memorydeck-umbrella.h"; sourceTree = "<group>"; };
+		35B948C2BFE93D0B3277AE0425FDDBB4 /* Pods-memorydeckUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeckUITests-frameworks.sh"; sourceTree = "<group>"; };
+		40AE8D7141452DAC43AC5C61E866CA45 /* Pods-memorydeckTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-memorydeckTests.modulemap"; sourceTree = "<group>"; };
+		49614D39E5B14783DF4E64F8CE55104E /* Pods-memorydeckUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-memorydeckUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4EE771DA168DFA6A7EED35F4E638862B /* Pods-memorydeckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeckUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F6195E85ED904C55AF5FB78F296A389 /* Pods-memorydeckTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-memorydeckTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		516C037FF93AE81A73DFE99FE7786092 /* Pods-memorydeckTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-memorydeckTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		53BFFC39CEF6C05C38C1BC20E1E3F28C /* Pods-memorydeckTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-memorydeckTests-umbrella.h"; sourceTree = "<group>"; };
+		5A07950561C552DC2B91A02C68BF699B /* Pods-memorydeck.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-memorydeck.modulemap"; sourceTree = "<group>"; };
+		5D11BB56B096BD4AA24CA5895291F9E9 /* Pods_memorydeckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_memorydeckUITests.framework; path = "Pods-memorydeckUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B0578D3AC5672DDBEF6470CE650032 /* Pods-memorydeckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeckTests.release.xcconfig"; sourceTree = "<group>"; };
+		66DB9DEF0B546ED73FC9E139F9C2CA9E /* Pods-memorydeckUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-memorydeckUITests-dummy.m"; sourceTree = "<group>"; };
+		6C13AD16660BB31ECEBAD42A6D1A6A10 /* Pods-memorydeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeck.debug.xcconfig"; sourceTree = "<group>"; };
+		7026E3BDFE9BD94206F6B3477BA18A24 /* Pods-memorydeck-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeck-resources.sh"; sourceTree = "<group>"; };
+		757477AE8599F09982C076A8AB28954E /* Pods-memorydeckTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeckTests-frameworks.sh"; sourceTree = "<group>"; };
+		83673AFB073113236F6291C299C2F5BF /* Pods-memorydeck-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-memorydeck-acknowledgements.plist"; sourceTree = "<group>"; };
+		8A98DA003BC3D16244E1E32F64E16E21 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
+		8BF056C6F192D5B5459E3D0DCBE2AC26 /* Pods_memorydeckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_memorydeckTests.framework; path = "Pods-memorydeckTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E1C8CD865B9D47BDAE1A2387D15104 /* Pods-memorydeckUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-memorydeckUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98135A2A223BB690FDBC62A69F46002A /* Pods-memorydeck-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeck-frameworks.sh"; sourceTree = "<group>"; };
+		9D44873C45ADFDA4BC1833253A9E686E /* Pods-memorydeckUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeckUITests-resources.sh"; sourceTree = "<group>"; };
+		A265731B20A517B9D4E911629A6F3A11 /* Pods-memorydeckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C37C51FA2584AF3ABC6D87D0240E4AF8 /* Pods-memorydeckTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeckTests-resources.sh"; sourceTree = "<group>"; };
+		C779F0FA1809B63C0B7F1BA11F00059B /* Pods-memorydeckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeckUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D24B01636BF40E0DB479BDFD842A050C /* Pods-memorydeckUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-memorydeckUITests-umbrella.h"; sourceTree = "<group>"; };
+		E67A57E65630B51EF9C30A513009066A /* Pods-memorydeck-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-memorydeck-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EAB4CA94B946123F7AAE056ED2442D65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA749E0220E2D3F997339DCF2603FED6 /* Pods-memorydeckUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-memorydeckUITests.modulemap"; sourceTree = "<group>"; };
+		FDF62AA8AAEBDA2539B52F7C5C53B7FB /* Pods-memorydeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeck.release.xcconfig"; sourceTree = "<group>"; };
+		FFF6DF6BAFE06FA2A53411A7388418E4 /* Pods_memorydeck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_memorydeck.framework; path = "Pods-memorydeck.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF1D127992D085CF78B74DF436B0557C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B92F41249EDA4D1E59BAF0B8A96F79A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C788CE6385D9D20C7E6A2DE771C996A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7D0F559246F55F9A180A7BFC1B0DF2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB8FE67BD70944DDC5468AE25C525756 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F93881BACF2244025F62FD114962E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02CEEFADA1CD9927394A3819336ABCC7 /* Pods-memorydeckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB4CA94B946123F7AAE056ED2442D65 /* Info.plist */,
+				FA749E0220E2D3F997339DCF2603FED6 /* Pods-memorydeckUITests.modulemap */,
+				90E1C8CD865B9D47BDAE1A2387D15104 /* Pods-memorydeckUITests-acknowledgements.markdown */,
+				49614D39E5B14783DF4E64F8CE55104E /* Pods-memorydeckUITests-acknowledgements.plist */,
+				66DB9DEF0B546ED73FC9E139F9C2CA9E /* Pods-memorydeckUITests-dummy.m */,
+				35B948C2BFE93D0B3277AE0425FDDBB4 /* Pods-memorydeckUITests-frameworks.sh */,
+				9D44873C45ADFDA4BC1833253A9E686E /* Pods-memorydeckUITests-resources.sh */,
+				D24B01636BF40E0DB479BDFD842A050C /* Pods-memorydeckUITests-umbrella.h */,
+				C779F0FA1809B63C0B7F1BA11F00059B /* Pods-memorydeckUITests.debug.xcconfig */,
+				4EE771DA168DFA6A7EED35F4E638862B /* Pods-memorydeckUITests.release.xcconfig */,
+			);
+			name = "Pods-memorydeckUITests";
+			path = "Target Support Files/Pods-memorydeckUITests";
+			sourceTree = "<group>";
+		};
+		1A5C563B47835DAEFE9FF785AE5ADA1C /* Pods-memorydeckTests */ = {
+			isa = PBXGroup;
+			children = (
+				26D174F0958EE2161D3EDB5B79EC1810 /* Info.plist */,
+				40AE8D7141452DAC43AC5C61E866CA45 /* Pods-memorydeckTests.modulemap */,
+				516C037FF93AE81A73DFE99FE7786092 /* Pods-memorydeckTests-acknowledgements.markdown */,
+				4F6195E85ED904C55AF5FB78F296A389 /* Pods-memorydeckTests-acknowledgements.plist */,
+				2438FBFE2722251C90FDF054E48D1B29 /* Pods-memorydeckTests-dummy.m */,
+				757477AE8599F09982C076A8AB28954E /* Pods-memorydeckTests-frameworks.sh */,
+				C37C51FA2584AF3ABC6D87D0240E4AF8 /* Pods-memorydeckTests-resources.sh */,
+				53BFFC39CEF6C05C38C1BC20E1E3F28C /* Pods-memorydeckTests-umbrella.h */,
+				A265731B20A517B9D4E911629A6F3A11 /* Pods-memorydeckTests.debug.xcconfig */,
+				62B0578D3AC5672DDBEF6470CE650032 /* Pods-memorydeckTests.release.xcconfig */,
+			);
+			name = "Pods-memorydeckTests";
+			path = "Target Support Files/Pods-memorydeckTests";
+			sourceTree = "<group>";
+		};
+		6202124E9D433C3EA7B1CF2F09917CA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B109A558AEC0464E1C8AD13A3517ECA8 /* OneSignal */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66A1E0B1151A2CA192EA60F3CB2D8FF3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D36CE471F227C1BD2BF2F97B2AEDE59A /* Pods-memorydeck */,
+				1A5C563B47835DAEFE9FF785AE5ADA1C /* Pods-memorydeckTests */,
+				02CEEFADA1CD9927394A3819336ABCC7 /* Pods-memorydeckUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6202124E9D433C3EA7B1CF2F09917CA5 /* Pods */,
+				F20D2FBC0361AD5BF9572234C43CF6E6 /* Products */,
+				66A1E0B1151A2CA192EA60F3CB2D8FF3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B109A558AEC0464E1C8AD13A3517ECA8 /* OneSignal */ = {
+			isa = PBXGroup;
+			children = (
+				FF9CEBD734AC19E8ADE2CA12CDF9AD21 /* Frameworks */,
+			);
+			name = OneSignal;
+			path = OneSignal;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D36CE471F227C1BD2BF2F97B2AEDE59A /* Pods-memorydeck */ = {
+			isa = PBXGroup;
+			children = (
+				2652FE7F4C054AC96ED2EC8FB87209EC /* Info.plist */,
+				5A07950561C552DC2B91A02C68BF699B /* Pods-memorydeck.modulemap */,
+				E67A57E65630B51EF9C30A513009066A /* Pods-memorydeck-acknowledgements.markdown */,
+				83673AFB073113236F6291C299C2F5BF /* Pods-memorydeck-acknowledgements.plist */,
+				1AE4DF340D4D777DCE00A9D9EAC2252C /* Pods-memorydeck-dummy.m */,
+				98135A2A223BB690FDBC62A69F46002A /* Pods-memorydeck-frameworks.sh */,
+				7026E3BDFE9BD94206F6B3477BA18A24 /* Pods-memorydeck-resources.sh */,
+				358A1312D9DC71E786F8ADDAB6457A31 /* Pods-memorydeck-umbrella.h */,
+				6C13AD16660BB31ECEBAD42A6D1A6A10 /* Pods-memorydeck.debug.xcconfig */,
+				FDF62AA8AAEBDA2539B52F7C5C53B7FB /* Pods-memorydeck.release.xcconfig */,
+			);
+			name = "Pods-memorydeck";
+			path = "Target Support Files/Pods-memorydeck";
+			sourceTree = "<group>";
+		};
+		F20D2FBC0361AD5BF9572234C43CF6E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFF6DF6BAFE06FA2A53411A7388418E4 /* Pods_memorydeck.framework */,
+				8BF056C6F192D5B5459E3D0DCBE2AC26 /* Pods_memorydeckTests.framework */,
+				5D11BB56B096BD4AA24CA5895291F9E9 /* Pods_memorydeckUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF9CEBD734AC19E8ADE2CA12CDF9AD21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A98DA003BC3D16244E1E32F64E16E21 /* OneSignal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6110AA7660260B921C627F6FC1C7EC34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1B66A86E2BC571DB10FF4147E92C31 /* Pods-memorydeckTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36CDBAC6D7DA78179DC75E8E5F5E06A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8027467F77C852E099933824FEACECC2 /* Pods-memorydeck-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20AAB7C85CF35E08AFDAAB165FB1BE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DA6BCD63C57BE2CFA79F5C0B16A81F8 /* Pods-memorydeckUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E2EE94B9656E2E8F491E2BFCB54B0CBE /* Pods-memorydeck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5952B56697324286A07478181849A7B3 /* Build configuration list for PBXNativeTarget "Pods-memorydeck" */;
+			buildPhases = (
+				BA8124E80153B5E72A2437B8CF3AEC57 /* Sources */,
+				C788CE6385D9D20C7E6A2DE771C996A9 /* Frameworks */,
+				A36CDBAC6D7DA78179DC75E8E5F5E06A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-memorydeck";
+			productName = "Pods-memorydeck";
+			productReference = FFF6DF6BAFE06FA2A53411A7388418E4 /* Pods_memorydeck.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2D02E71A7C8363725115D18037464F1 /* Pods-memorydeckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971E7C3F069C9BAEF6EF266912146308 /* Build configuration list for PBXNativeTarget "Pods-memorydeckUITests" */;
+			buildPhases = (
+				2FD210C3B6C180264F09FF0C75BF768A /* Sources */,
+				DB8FE67BD70944DDC5468AE25C525756 /* Frameworks */,
+				D20AAB7C85CF35E08AFDAAB165FB1BE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-memorydeckUITests";
+			productName = "Pods-memorydeckUITests";
+			productReference = 5D11BB56B096BD4AA24CA5895291F9E9 /* Pods_memorydeckUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F649E4D0198281C5E796084F345F7D44 /* Pods-memorydeckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E56B1704B75211EC86C31B92623AF2 /* Build configuration list for PBXNativeTarget "Pods-memorydeckTests" */;
+			buildPhases = (
+				9C1835F640ED791FE77DA306ADFA4E4C /* Sources */,
+				AF1D127992D085CF78B74DF436B0557C /* Frameworks */,
+				6110AA7660260B921C627F6FC1C7EC34 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-memorydeckTests";
+			productName = "Pods-memorydeckTests";
+			productReference = 8BF056C6F192D5B5459E3D0DCBE2AC26 /* Pods_memorydeckTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F20D2FBC0361AD5BF9572234C43CF6E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2EE94B9656E2E8F491E2BFCB54B0CBE /* Pods-memorydeck */,
+				F649E4D0198281C5E796084F345F7D44 /* Pods-memorydeckTests */,
+				F2D02E71A7C8363725115D18037464F1 /* Pods-memorydeckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FD210C3B6C180264F09FF0C75BF768A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE79E685AF1C5954439E57110201BD4B /* Pods-memorydeckUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1835F640ED791FE77DA306ADFA4E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA68F225183CE863672D3556FB81240 /* Pods-memorydeckTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA8124E80153B5E72A2437B8CF3AEC57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E84120B635CC3434FD1D71E56D59011 /* Pods-memorydeck-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1804AA6F8932B3BC288554457B8EAD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE771DA168DFA6A7EED35F4E638862B /* Pods-memorydeckUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-memorydeckUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-memorydeckUITests/Pods-memorydeckUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_memorydeckUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		722E070C43F51C8DA50EEEAAB02512DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C13AD16660BB31ECEBAD42A6D1A6A10 /* Pods-memorydeck.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-memorydeck/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-memorydeck/Pods-memorydeck.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_memorydeck;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9441927C9CB82C7E8423AA7357EAF610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDF62AA8AAEBDA2539B52F7C5C53B7FB /* Pods-memorydeck.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-memorydeck/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-memorydeck/Pods-memorydeck.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_memorydeck;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B60DB82416369CC4EE6AD6DC8395AC79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A265731B20A517B9D4E911629A6F3A11 /* Pods-memorydeckTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-memorydeckTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-memorydeckTests/Pods-memorydeckTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_memorydeckTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E03969F6ABA7DFEB2437A68F72A88A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C779F0FA1809B63C0B7F1BA11F00059B /* Pods-memorydeckUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-memorydeckUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-memorydeckUITests/Pods-memorydeckUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_memorydeckUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5F635E81604802765F82950978D0CC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B0578D3AC5672DDBEF6470CE650032 /* Pods-memorydeckTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-memorydeckTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-memorydeckTests/Pods-memorydeckTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_memorydeckTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5952B56697324286A07478181849A7B3 /* Build configuration list for PBXNativeTarget "Pods-memorydeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				722E070C43F51C8DA50EEEAAB02512DB /* Debug */,
+				9441927C9CB82C7E8423AA7357EAF610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971E7C3F069C9BAEF6EF266912146308 /* Build configuration list for PBXNativeTarget "Pods-memorydeckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E03969F6ABA7DFEB2437A68F72A88A16 /* Debug */,
+				1804AA6F8932B3BC288554457B8EAD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E56B1704B75211EC86C31B92623AF2 /* Build configuration list for PBXNativeTarget "Pods-memorydeckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60DB82416369CC4EE6AD6DC8395AC79 /* Debug */,
+				F5F635E81604802765F82950978D0CC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

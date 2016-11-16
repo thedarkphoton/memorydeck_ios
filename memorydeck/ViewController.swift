@@ -10,18 +10,32 @@ import UIKit
 import WebKit
 
 class ViewController: UIViewController, WKNavigationDelegate {
+    
+    // MARK: Properties
     var _browser: WKWebView!
+    @IBOutlet var _back: UISwipeGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
         UIApplication.shared.statusBarStyle = .lightContent
-        view.backgroundColor = UIColor.init(red: 121 / 255, green: 134 / 255, blue: 203 / 255, alpha: 1)
+        view.backgroundColor = UIColor.init(red: 0.4745, green: 0.5254, blue: 0.796, alpha: 1)
         
+        initBrowser()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: Browser
+    func initBrowser() {
         _browser = WKWebView()
         _browser.customUserAgent = "App (iOS 0.0.1)"
         _browser.translatesAutoresizingMaskIntoConstraints = false
+        _browser.navigationDelegate = self
         view.addSubview(_browser)
         
         let leadingConstraint = NSLayoutConstraint(item: _browser, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 0)
@@ -34,10 +48,13 @@ class ViewController: UIViewController, WKNavigationDelegate {
         
         _browser.load(URLRequest(url: url))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
 }
 

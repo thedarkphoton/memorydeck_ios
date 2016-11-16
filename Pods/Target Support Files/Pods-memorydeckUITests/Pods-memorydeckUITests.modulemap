@@ -1,0 +1,6 @@
+framework module Pods_memorydeckUITests {
+  umbrella header "Pods-memorydeckUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
