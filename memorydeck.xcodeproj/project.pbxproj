@@ -505,6 +505,7 @@
 				2E9669121DDB905000847EFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E9669131DDB905000847EFC /* Build configuration list for PBXNativeTarget "memorydeckTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +514,7 @@
 				2E9669151DDB905000847EFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E9669161DDB905000847EFC /* Build configuration list for PBXNativeTarget "memorydeckUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +523,7 @@
 				2E9669181DDB905000847EFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
