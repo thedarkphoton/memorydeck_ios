@@ -8,8 +8,9 @@
 
 import UIKit
 import WebKit
+import OneSignal
 
-class ViewController: UIViewController, WKNavigationDelegate {
+class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
     
     // MARK: Properties
     var _browser: WKWebView!
@@ -32,7 +33,30 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     // MARK: Browser
     func initBrowser() {
-        _browser = WKWebView()
+        let contentController = WKUserContentController();
+        let userScript = WKUserScript(
+            source: "redHeader()",
+            injectionTime: WKUserScriptInjectionTime.atDocumentEnd,
+            forMainFrameOnly: true
+        )
+        contentController.addUserScript(userScript)
+        contentController.add(
+            self,
+            name: "getOneSignalId"
+        )
+        contentController.add(
+            self,
+            name: "enableNotifications"
+        )
+        contentController.add(
+            self,
+            name: "disableNotifications"
+        )
+        
+        let config = WKWebViewConfiguration()
+        config.userContentController = contentController
+        
+        _browser = WKWebView(frame: view.frame, configuration: config)
         _browser.customUserAgent = "App (iOS 0.0.1)"
         _browser.translatesAutoresizingMaskIntoConstraints = false
         _browser.navigationDelegate = self
@@ -44,8 +68,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let bottomConstraint = NSLayoutConstraint(item: _browser, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
         view.addConstraints([leadingConstraint, trailingConstraint, topConstraint, bottomConstraint])
         
-        let url = URL(string: "https://memorydeck.herokuapp.com/sessions")!
-        
+//        let url = URL(string: "https://memorydeck.herokuapp.com/sessions")!
+        let url = URL(string: "http://192.168.1.83:5000/sessions")!
         _browser.load(URLRequest(url: url))
     }
     
@@ -56,5 +80,16 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        
+        if(message.name == "getOneSignalId") {
+            print("JavaScript requested one signal id: \(OneSignal.app_id())")
+            _browser.evaluateJavaScript("setOneSignalId(\(OneSignal.app_id()))")
+        } else if (message.name == "enableNotifications") {
+            print("JavaScript requested to enable notifications")
+        } else if (message.name == "disableNotifications") {
+            print("JavaScript requested to disable notifications")
+        }
+    }
 }
-
