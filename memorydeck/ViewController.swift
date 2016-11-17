@@ -88,8 +88,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
             _browser.evaluateJavaScript("setOneSignalId(\(OneSignal.app_id()))")
         } else if (message.name == "enableNotifications") {
             print("JavaScript requested to enable notifications")
+            OneSignal.setSubscription(true)
         } else if (message.name == "disableNotifications") {
             print("JavaScript requested to disable notifications")
+            OneSignal.setSubscription(false)
         }
     }
 }
