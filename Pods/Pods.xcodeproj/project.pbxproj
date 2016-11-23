@@ -7,22 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B7F9732663EF1180CB1655585E2FC85 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F69AB2C2629C3DD8E49CCC0D5F66B /* Encoder.swift */; };
+		1304FAEA1E94F0DDF421190DCBC31A21 /* Pods-memorydeck-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 358A1312D9DC71E786F8ADDAB6457A31 /* Pods-memorydeck-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B92F41249EDA4D1E59BAF0B8A96F79A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		5E84120B635CC3434FD1D71E56D59011 /* Pods-memorydeck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4DF340D4D777DCE00A9D9EAC2252C /* Pods-memorydeck-dummy.m */; };
+		2F92904FBA83A4BA552E8DB9DA32DEE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		3145CF29D7BDDB9415B3288BF74BEABE /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF7E9C64563970250DBF244AEA1DED /* Operators.swift */; };
+		527C92E683EF10B7220E3FE130ACE3E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5C71D24ECB558E3000AB234197EB2C41 /* Gloss-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A793D8379D3D9329C439C4420679E4 /* Gloss-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68F93881BACF2244025F62FD114962E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		6F1B66A86E2BC571DB10FF4147E92C31 /* Pods-memorydeckTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53BFFC39CEF6C05C38C1BC20E1E3F28C /* Pods-memorydeckTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D90599C473273BE8106A09239978406 /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7E6152909896C7DAD6AC12A0331203 /* Gloss.swift */; };
 		7DA6BCD63C57BE2CFA79F5C0B16A81F8 /* Pods-memorydeckUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D24B01636BF40E0DB479BDFD842A050C /* Pods-memorydeckUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FA68F225183CE863672D3556FB81240 /* Pods-memorydeckTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2438FBFE2722251C90FDF054E48D1B29 /* Pods-memorydeckTests-dummy.m */; };
-		8027467F77C852E099933824FEACECC2 /* Pods-memorydeck-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 358A1312D9DC71E786F8ADDAB6457A31 /* Pods-memorydeck-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A7D0F559246F55F9A180A7BFC1B0DF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		8C00BDA62A539E45C3C20F1F6947095F /* Pods-memorydeck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE4DF340D4D777DCE00A9D9EAC2252C /* Pods-memorydeck-dummy.m */; };
+		C292E1DF1D7600ECFA5644E27411AD9F /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9C2DBC1A159ECF210D9769FD0E02CD /* ExtensionDictionary.swift */; };
 		DE79E685AF1C5954439E57110201BD4B /* Pods-memorydeckUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DB9DEF0B546ED73FC9E139F9C2CA9E /* Pods-memorydeckUITests-dummy.m */; };
+		E1247BDD2195F9EA1EA71B8583C5BDED /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE127C12A5962C8C3D34CBD804CA26 /* Decoder.swift */; };
+		E6679E50B1801DB62D44D7E55D6379FD /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25ACAAB1FF704BE07DC2B46EADBA1AB /* ExtensionArray.swift */; };
+		F74861D230E8EA85A5FEED680D155C22 /* Gloss-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73DA45784C1FC02C6B053E679C8A0F /* Gloss-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C38D49244AA7DAA280BAD657F61C1E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39C69D9B6A709F788E7F5A5E2BDCF612;
+			remoteInfo = Gloss;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		04BFA62E1D8D4CD999B6782FD0D37966 /* Gloss-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-prefix.pch"; sourceTree = "<group>"; };
+		184F69AB2C2629C3DD8E49CCC0D5F66B /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Encoder.swift; sourceTree = "<group>"; };
 		1AE4DF340D4D777DCE00A9D9EAC2252C /* Pods-memorydeck-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-memorydeck-dummy.m"; sourceTree = "<group>"; };
+		1CE8822C07647AF01D06C53DE97EF5E0 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gloss.framework; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2438FBFE2722251C90FDF054E48D1B29 /* Pods-memorydeckTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-memorydeckTests-dummy.m"; sourceTree = "<group>"; };
 		2652FE7F4C054AC96ED2EC8FB87209EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26D174F0958EE2161D3EDB5B79EC1810 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B73DA45784C1FC02C6B053E679C8A0F /* Gloss-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gloss-dummy.m"; sourceTree = "<group>"; };
+		2F39DC46AC214E5ACEE2ACCE41F620E9 /* Gloss.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gloss.xcconfig; sourceTree = "<group>"; };
 		358A1312D9DC71E786F8ADDAB6457A31 /* Pods-memorydeck-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-memorydeck-umbrella.h"; sourceTree = "<group>"; };
 		35B948C2BFE93D0B3277AE0425FDDBB4 /* Pods-memorydeckUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeckUITests-frameworks.sh"; sourceTree = "<group>"; };
 		40AE8D7141452DAC43AC5C61E866CA45 /* Pods-memorydeckTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-memorydeckTests.modulemap"; sourceTree = "<group>"; };
@@ -32,45 +56,61 @@
 		516C037FF93AE81A73DFE99FE7786092 /* Pods-memorydeckTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-memorydeckTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		53BFFC39CEF6C05C38C1BC20E1E3F28C /* Pods-memorydeckTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-memorydeckTests-umbrella.h"; sourceTree = "<group>"; };
 		5A07950561C552DC2B91A02C68BF699B /* Pods-memorydeck.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-memorydeck.modulemap"; sourceTree = "<group>"; };
-		5D11BB56B096BD4AA24CA5895291F9E9 /* Pods_memorydeckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_memorydeckUITests.framework; path = "Pods-memorydeckUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B0578D3AC5672DDBEF6470CE650032 /* Pods-memorydeckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeckTests.release.xcconfig"; sourceTree = "<group>"; };
+		66484684D943A9C1253FD721EE3F2C23 /* Pods_memorydeckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_memorydeckUITests.framework; path = "Pods-memorydeckUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DB9DEF0B546ED73FC9E139F9C2CA9E /* Pods-memorydeckUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-memorydeckUITests-dummy.m"; sourceTree = "<group>"; };
+		6A9C2DBC1A159ECF210D9769FD0E02CD /* ExtensionDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionDictionary.swift; path = Sources/ExtensionDictionary.swift; sourceTree = "<group>"; };
 		6C13AD16660BB31ECEBAD42A6D1A6A10 /* Pods-memorydeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeck.debug.xcconfig"; sourceTree = "<group>"; };
 		7026E3BDFE9BD94206F6B3477BA18A24 /* Pods-memorydeck-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeck-resources.sh"; sourceTree = "<group>"; };
+		71A793D8379D3D9329C439C4420679E4 /* Gloss-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-umbrella.h"; sourceTree = "<group>"; };
 		757477AE8599F09982C076A8AB28954E /* Pods-memorydeckTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeckTests-frameworks.sh"; sourceTree = "<group>"; };
+		7AE29CDFE515C5DEFB30055FB01EC8AE /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
 		83673AFB073113236F6291C299C2F5BF /* Pods-memorydeck-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-memorydeck-acknowledgements.plist"; sourceTree = "<group>"; };
-		8A98DA003BC3D16244E1E32F64E16E21 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
-		8BF056C6F192D5B5459E3D0DCBE2AC26 /* Pods_memorydeckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_memorydeckTests.framework; path = "Pods-memorydeckTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BE5DAA6309D4EE091DE50AEBAE06BC /* Pods_memorydeckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_memorydeckTests.framework; path = "Pods-memorydeckTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7E6152909896C7DAD6AC12A0331203 /* Gloss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gloss.swift; path = Sources/Gloss.swift; sourceTree = "<group>"; };
 		90E1C8CD865B9D47BDAE1A2387D15104 /* Pods-memorydeckUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-memorydeckUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98135A2A223BB690FDBC62A69F46002A /* Pods-memorydeck-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeck-frameworks.sh"; sourceTree = "<group>"; };
 		9D44873C45ADFDA4BC1833253A9E686E /* Pods-memorydeckUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeckUITests-resources.sh"; sourceTree = "<group>"; };
 		A265731B20A517B9D4E911629A6F3A11 /* Pods-memorydeckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A787618594883B948E91118B56C1B7EE /* Gloss.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Gloss.modulemap; sourceTree = "<group>"; };
+		AC1307E2C4EE40A3600AFD04FA598053 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B25ACAAB1FF704BE07DC2B46EADBA1AB /* ExtensionArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = Sources/ExtensionArray.swift; sourceTree = "<group>"; };
+		B38C2F7F4555FB5EC01C3199035A447C /* Pods_memorydeck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_memorydeck.framework; path = "Pods-memorydeck.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37C51FA2584AF3ABC6D87D0240E4AF8 /* Pods-memorydeckTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-memorydeckTests-resources.sh"; sourceTree = "<group>"; };
 		C779F0FA1809B63C0B7F1BA11F00059B /* Pods-memorydeckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeckUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1FE127C12A5962C8C3D34CBD804CA26 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Decoder.swift; sourceTree = "<group>"; };
 		D24B01636BF40E0DB479BDFD842A050C /* Pods-memorydeckUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-memorydeckUITests-umbrella.h"; sourceTree = "<group>"; };
 		E67A57E65630B51EF9C30A513009066A /* Pods-memorydeck-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-memorydeck-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E8DF7E9C64563970250DBF244AEA1DED /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		EAB4CA94B946123F7AAE056ED2442D65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA749E0220E2D3F997339DCF2603FED6 /* Pods-memorydeckUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-memorydeckUITests.modulemap"; sourceTree = "<group>"; };
 		FDF62AA8AAEBDA2539B52F7C5C53B7FB /* Pods-memorydeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-memorydeck.release.xcconfig"; sourceTree = "<group>"; };
-		FFF6DF6BAFE06FA2A53411A7388418E4 /* Pods_memorydeck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_memorydeck.framework; path = "Pods-memorydeck.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5A58FA0507C0DB11E2B8D57860D179F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F92904FBA83A4BA552E8DB9DA32DEE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD45FF2A64C73D2ECD5021A9F12EEF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527C92E683EF10B7220E3FE130ACE3E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF1D127992D085CF78B74DF436B0557C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2B92F41249EDA4D1E59BAF0B8A96F79A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C788CE6385D9D20C7E6A2DE771C996A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A7D0F559246F55F9A180A7BFC1B0DF2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,10 +161,36 @@
 			path = "Target Support Files/Pods-memorydeckTests";
 			sourceTree = "<group>";
 		};
-		6202124E9D433C3EA7B1CF2F09917CA5 /* Pods */ = {
+		3A4023AF354CDF8C229A2BD721409D3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B109A558AEC0464E1C8AD13A3517ECA8 /* OneSignal */,
+				1CE8822C07647AF01D06C53DE97EF5E0 /* Gloss.framework */,
+				B38C2F7F4555FB5EC01C3199035A447C /* Pods_memorydeck.framework */,
+				86BE5DAA6309D4EE091DE50AEBAE06BC /* Pods_memorydeckTests.framework */,
+				66484684D943A9C1253FD721EE3F2C23 /* Pods_memorydeckUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46B768556B8C7A49BC60BE97B13EAC99 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A787618594883B948E91118B56C1B7EE /* Gloss.modulemap */,
+				2F39DC46AC214E5ACEE2ACCE41F620E9 /* Gloss.xcconfig */,
+				2B73DA45784C1FC02C6B053E679C8A0F /* Gloss-dummy.m */,
+				04BFA62E1D8D4CD999B6782FD0D37966 /* Gloss-prefix.pch */,
+				71A793D8379D3D9329C439C4420679E4 /* Gloss-umbrella.h */,
+				AC1307E2C4EE40A3600AFD04FA598053 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Gloss";
+			sourceTree = "<group>";
+		};
+		4D6A7F1E0B389D65FD19D2DDEA1B012B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDBDF0FEA0CFD8D6E5E1FE951458366C /* Gloss */,
+				9B6F89F67EBC8D24EEDEE18FF0CEFCC6 /* OneSignal */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -152,16 +218,16 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6202124E9D433C3EA7B1CF2F09917CA5 /* Pods */,
-				F20D2FBC0361AD5BF9572234C43CF6E6 /* Products */,
+				4D6A7F1E0B389D65FD19D2DDEA1B012B /* Pods */,
+				3A4023AF354CDF8C229A2BD721409D3D /* Products */,
 				66A1E0B1151A2CA192EA60F3CB2D8FF3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B109A558AEC0464E1C8AD13A3517ECA8 /* OneSignal */ = {
+		9B6F89F67EBC8D24EEDEE18FF0CEFCC6 /* OneSignal */ = {
 			isa = PBXGroup;
 			children = (
-				FF9CEBD734AC19E8ADE2CA12CDF9AD21 /* Frameworks */,
+				C02870E3C215977EF728D5B69EB2EE3E /* Frameworks */,
 			);
 			name = OneSignal;
 			path = OneSignal;
@@ -171,6 +237,14 @@
 			isa = PBXGroup;
 			children = (
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C02870E3C215977EF728D5B69EB2EE3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AE29CDFE515C5DEFB30055FB01EC8AE /* OneSignal.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,22 +267,19 @@
 			path = "Target Support Files/Pods-memorydeck";
 			sourceTree = "<group>";
 		};
-		F20D2FBC0361AD5BF9572234C43CF6E6 /* Products */ = {
+		FDBDF0FEA0CFD8D6E5E1FE951458366C /* Gloss */ = {
 			isa = PBXGroup;
 			children = (
-				FFF6DF6BAFE06FA2A53411A7388418E4 /* Pods_memorydeck.framework */,
-				8BF056C6F192D5B5459E3D0DCBE2AC26 /* Pods_memorydeckTests.framework */,
-				5D11BB56B096BD4AA24CA5895291F9E9 /* Pods_memorydeckUITests.framework */,
+				D1FE127C12A5962C8C3D34CBD804CA26 /* Decoder.swift */,
+				184F69AB2C2629C3DD8E49CCC0D5F66B /* Encoder.swift */,
+				B25ACAAB1FF704BE07DC2B46EADBA1AB /* ExtensionArray.swift */,
+				6A9C2DBC1A159ECF210D9769FD0E02CD /* ExtensionDictionary.swift */,
+				8A7E6152909896C7DAD6AC12A0331203 /* Gloss.swift */,
+				E8DF7E9C64563970250DBF244AEA1DED /* Operators.swift */,
+				46B768556B8C7A49BC60BE97B13EAC99 /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FF9CEBD734AC19E8ADE2CA12CDF9AD21 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8A98DA003BC3D16244E1E32F64E16E21 /* OneSignal.framework */,
-			);
-			name = Frameworks;
+			name = Gloss;
+			path = Gloss;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,11 +293,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A36CDBAC6D7DA78179DC75E8E5F5E06A /* Headers */ = {
+		8EACB92AE42965506BC45083F0B2085F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8027467F77C852E099933824FEACECC2 /* Pods-memorydeck-umbrella.h in Headers */,
+				1304FAEA1E94F0DDF421190DCBC31A21 /* Pods-memorydeck-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96060652D1C569EAB9ECD71C133FE3ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C71D24ECB558E3000AB234197EB2C41 /* Gloss-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,21 +320,39 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E2EE94B9656E2E8F491E2BFCB54B0CBE /* Pods-memorydeck */ = {
+		14F38141AC045AEAE2893E6456F6CBB4 /* Pods-memorydeck */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5952B56697324286A07478181849A7B3 /* Build configuration list for PBXNativeTarget "Pods-memorydeck" */;
+			buildConfigurationList = 36BA4BAB348F9C5F16B76C550007022E /* Build configuration list for PBXNativeTarget "Pods-memorydeck" */;
 			buildPhases = (
-				BA8124E80153B5E72A2437B8CF3AEC57 /* Sources */,
-				C788CE6385D9D20C7E6A2DE771C996A9 /* Frameworks */,
-				A36CDBAC6D7DA78179DC75E8E5F5E06A /* Headers */,
+				42F11C6FB2BD671EB772F0CEC0EE3AC8 /* Sources */,
+				5A58FA0507C0DB11E2B8D57860D179F3 /* Frameworks */,
+				8EACB92AE42965506BC45083F0B2085F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F095EF699FC1ED314E7B2A96B5B80740 /* PBXTargetDependency */,
+			);
+			name = "Pods-memorydeck";
+			productName = "Pods-memorydeck";
+			productReference = B38C2F7F4555FB5EC01C3199035A447C /* Pods_memorydeck.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		39C69D9B6A709F788E7F5A5E2BDCF612 /* Gloss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99F558792CFEB8051CE3610E79DA4CB /* Build configuration list for PBXNativeTarget "Gloss" */;
+			buildPhases = (
+				7CB34417E8829C4BAA9341FCCFAD446E /* Sources */,
+				9CD45FF2A64C73D2ECD5021A9F12EEF0 /* Frameworks */,
+				96060652D1C569EAB9ECD71C133FE3ED /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-memorydeck";
-			productName = "Pods-memorydeck";
-			productReference = FFF6DF6BAFE06FA2A53411A7388418E4 /* Pods_memorydeck.framework */;
+			name = Gloss;
+			productName = Gloss;
+			productReference = 1CE8822C07647AF01D06C53DE97EF5E0 /* Gloss.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F2D02E71A7C8363725115D18037464F1 /* Pods-memorydeckUITests */ = {
@@ -272,7 +369,7 @@
 			);
 			name = "Pods-memorydeckUITests";
 			productName = "Pods-memorydeckUITests";
-			productReference = 5D11BB56B096BD4AA24CA5895291F9E9 /* Pods_memorydeckUITests.framework */;
+			productReference = 66484684D943A9C1253FD721EE3F2C23 /* Pods_memorydeckUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F649E4D0198281C5E796084F345F7D44 /* Pods-memorydeckTests */ = {
@@ -289,7 +386,7 @@
 			);
 			name = "Pods-memorydeckTests";
 			productName = "Pods-memorydeckTests";
-			productReference = 8BF056C6F192D5B5459E3D0DCBE2AC26 /* Pods_memorydeckTests.framework */;
+			productReference = 86BE5DAA6309D4EE091DE50AEBAE06BC /* Pods_memorydeckTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -309,11 +406,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F20D2FBC0361AD5BF9572234C43CF6E6 /* Products */;
+			productRefGroup = 3A4023AF354CDF8C229A2BD721409D3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2EE94B9656E2E8F491E2BFCB54B0CBE /* Pods-memorydeck */,
+				39C69D9B6A709F788E7F5A5E2BDCF612 /* Gloss */,
+				14F38141AC045AEAE2893E6456F6CBB4 /* Pods-memorydeck */,
 				F649E4D0198281C5E796084F345F7D44 /* Pods-memorydeckTests */,
 				F2D02E71A7C8363725115D18037464F1 /* Pods-memorydeckUITests */,
 			);
@@ -329,6 +427,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42F11C6FB2BD671EB772F0CEC0EE3AC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C00BDA62A539E45C3C20F1F6947095F /* Pods-memorydeck-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB34417E8829C4BAA9341FCCFAD446E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1247BDD2195F9EA1EA71B8583C5BDED /* Decoder.swift in Sources */,
+				0B7F9732663EF1180CB1655585E2FC85 /* Encoder.swift in Sources */,
+				E6679E50B1801DB62D44D7E55D6379FD /* ExtensionArray.swift in Sources */,
+				C292E1DF1D7600ECFA5644E27411AD9F /* ExtensionDictionary.swift in Sources */,
+				F74861D230E8EA85A5FEED680D155C22 /* Gloss-dummy.m in Sources */,
+				7D90599C473273BE8106A09239978406 /* Gloss.swift in Sources */,
+				3145CF29D7BDDB9415B3288BF74BEABE /* Operators.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C1835F640ED791FE77DA306ADFA4E4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,17 +457,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA8124E80153B5E72A2437B8CF3AEC57 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E84120B635CC3434FD1D71E56D59011 /* Pods-memorydeck-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F095EF699FC1ED314E7B2A96B5B80740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gloss;
+			target = 39C69D9B6A709F788E7F5A5E2BDCF612 /* Gloss */;
+			targetProxy = C38D49244AA7DAA280BAD657F61C1E28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		17866EF930FA025EC5E6AD09A27FD4F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDF62AA8AAEBDA2539B52F7C5C53B7FB /* Pods-memorydeck.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-memorydeck/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-memorydeck/Pods-memorydeck.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_memorydeck;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1804AA6F8932B3BC288554457B8EAD57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4EE771DA168DFA6A7EED35F4E638862B /* Pods-memorydeckUITests.release.xcconfig */;
@@ -383,7 +539,7 @@
 			};
 			name = Release;
 		};
-		722E070C43F51C8DA50EEEAAB02512DB /* Debug */ = {
+		87AC3E3CA2C1664F8569B2FD13A9E503 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C13AD16660BB31ECEBAD42A6D1A6A10 /* Pods-memorydeck.debug.xcconfig */;
 			buildSettings = {
@@ -412,15 +568,49 @@
 				PRODUCT_NAME = Pods_memorydeck;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		9441927C9CB82C7E8423AA7357EAF610 /* Release */ = {
+		9302130DB76983880CD5847320790D12 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDF62AA8AAEBDA2539B52F7C5C53B7FB /* Pods-memorydeck.release.xcconfig */;
+			baseConfigurationReference = 2F39DC46AC214E5ACEE2ACCE41F620E9 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99359DD368BB6756AAAE391C83962860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F39DC46AC214E5ACEE2ACCE41F620E9 /* Gloss.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -433,20 +623,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-memorydeck/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-memorydeck/Pods-memorydeck.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_memorydeck;
+				PRODUCT_NAME = Gloss;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -654,11 +841,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5952B56697324286A07478181849A7B3 /* Build configuration list for PBXNativeTarget "Pods-memorydeck" */ = {
+		36BA4BAB348F9C5F16B76C550007022E /* Build configuration list for PBXNativeTarget "Pods-memorydeck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				722E070C43F51C8DA50EEEAAB02512DB /* Debug */,
-				9441927C9CB82C7E8423AA7357EAF610 /* Release */,
+				87AC3E3CA2C1664F8569B2FD13A9E503 /* Debug */,
+				17866EF930FA025EC5E6AD09A27FD4F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -677,6 +864,15 @@
 			buildConfigurations = (
 				B60DB82416369CC4EE6AD6DC8395AC79 /* Debug */,
 				F5F635E81604802765F82950978D0CC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99F558792CFEB8051CE3610E79DA4CB /* Build configuration list for PBXNativeTarget "Gloss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9302130DB76983880CD5847320790D12 /* Debug */,
+				99359DD368BB6756AAAE391C83962860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

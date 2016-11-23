@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Gloss.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-memorydeck.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E2EE94B9656E2E8F491E2BFCB54B0CBE</key>
+		<key>14F38141AC045AEAE2893E6456F6CBB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39C69D9B6A709F788E7F5A5E2BDCF612</key>
 		<dict>
 			<key>primary</key>
 			<true/>

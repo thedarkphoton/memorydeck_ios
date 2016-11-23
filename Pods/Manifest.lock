@@ -1,12 +1,15 @@
 PODS:
-  - OneSignal (2.2.2)
+  - Gloss (1.1.0)
+  - OneSignal (2.2.3)
 
 DEPENDENCIES:
+  - Gloss (~> 1.1)
   - OneSignal
 
 SPEC CHECKSUMS:
-  OneSignal: e0b347d6eb671903e0cec630f1b4c1cc446bd874
+  Gloss: a8340c124ff69c5d1c12e06c252373f4a16d2958
+  OneSignal: 5fb2b0bce3be5a7cbb5f2d357e26f03a96c4859a
 
-PODFILE CHECKSUM: 9b0286ee007ed2b2a6ea4b53e13d04e471615e9c
+PODFILE CHECKSUM: 6df1fd7c249c39839dc546a790a8c0f9830d8852
 
 COCOAPODS: 1.1.1

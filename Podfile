@@ -18,4 +18,6 @@ target 'memorydeck' do
   end
 
 end
+
 pod 'OneSignal'
+pod 'Gloss', '~> 1.1'

@@ -9,10 +9,30 @@
 import UIKit
 import WebKit
 import OneSignal
+import Gloss
+
+struct OneSignalData: Glossy {
+    let oneSignalId: String?
+    let iOSPushId: String?
+    
+    init?(json: JSON) {
+        self.oneSignalId = "oneSignalId" <~~ json
+        self.iOSPushId = "iOSPushId" <~~ json
+    }
+    
+    func toJSON() -> JSON? {
+        return jsonify([
+            "oneSignalId" ~~> self.oneSignalId,
+            "iOSPushId" ~~> self.iOSPushId
+            ])
+    }
+}
 
 class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
     
     // MARK: Properties
+    var _oneSignalId: String!
+    var _iOSPushId: String!
     var _browser: WKWebView!
     @IBOutlet var _back: UISwipeGestureRecognizer!
     
@@ -84,14 +104,53 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         
         if(message.name == "getOneSignalId") {
-            print("JavaScript requested one signal id: \(OneSignal.app_id())")
-            _browser.evaluateJavaScript("setOneSignalId(\(OneSignal.app_id()))")
+            getOneSignalId()
         } else if (message.name == "enableNotifications") {
-            print("JavaScript requested to enable notifications")
+            print("JS INTERFACE: notifications enabled")
             OneSignal.setSubscription(true)
         } else if (message.name == "disableNotifications") {
-            print("JavaScript requested to disable notifications")
+            print("JS INTERFACE: notifications disabled")
             OneSignal.setSubscription(false)
+        }
+    }
+    
+    func getOneSignalId() {
+        let pref = UserDefaults.standard;
+        
+        if pref.object(forKey: "oneSignal") == nil {
+            print("ONE SIGNAL: id was not found in preferences, acquiring id...")
+            OneSignal.idsAvailable({ (userId, pushToken) in
+                var oneSignalId = ""
+                var iOSPushId = ""
+                
+                oneSignalId = userId!;
+                if (pushToken != nil) {
+                    iOSPushId = pushToken!
+                }
+                
+                let json = jsonify([
+                    "oneSignalId" ~~> oneSignalId,
+                    "iOSPushId" ~~> iOSPushId
+                    ])
+                
+                pref.set(json, forKey: "oneSignal")
+                if !pref.synchronize() {
+                    print("ONE SIGNAL: data failed to save to preferences")
+                }
+                
+                print("ONE SIGNAL: ... id acquired: \(oneSignalId)")
+                self._browser.evaluateJavaScript("setOneSignalId('\(oneSignalId)')")
+            })
+        } else {
+            if let json = pref.object(forKey: "oneSignal") as! JSON! {
+                let oneSignalData = OneSignalData(json: json)!
+                let oneSignalId = oneSignalData.oneSignalId!
+                
+                print("ONE SIGNAL: id found in preferences: \(oneSignalId)")
+                _browser.evaluateJavaScript("setOneSignalId('\(oneSignalId)')")
+            } else {
+                print("ONE SIGNAL: There was an error retrieving data from preferences")
+            }
         }
     }
 }

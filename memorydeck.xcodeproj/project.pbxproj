@@ -40,6 +40,7 @@
 		0FB291C4ABF31793BCF4E98C /* Pods-memorydeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memorydeck.release.xcconfig"; path = "Pods/Target Support Files/Pods-memorydeck/Pods-memorydeck.release.xcconfig"; sourceTree = "<group>"; };
 		1A4D603CB30DB5E76F3EEE7B /* Pods-memorydeckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memorydeckUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-memorydeckUITests/Pods-memorydeckUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2860223C9262511F4F412791 /* Pods_memorydeckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memorydeckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E458B511DDF1D8700D83224 /* memorydeck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = memorydeck.entitlements; sourceTree = "<group>"; };
 		2E9668E81DDB905000847EFC /* memorydeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memorydeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9668EB1DDB905000847EFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E9668ED1DDB905000847EFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		2E9668EA1DDB905000847EFC /* memorydeck */ = {
 			isa = PBXGroup;
 			children = (
+				2E458B511DDF1D8700D83224 /* memorydeck.entitlements */,
 				2E9668EB1DDB905000847EFC /* AppDelegate.swift */,
 				2E9668ED1DDB905000847EFC /* ViewController.swift */,
 				2E9668EF1DDB905000847EFC /* Main.storyboard */,
@@ -242,9 +244,13 @@
 				TargetAttributes = {
 					2E9668E71DDB905000847EFC = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 68VX4ZD8NU;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -605,6 +611,8 @@
 			baseConfigurationReference = A47395FD8DA67CBC438EB097 /* Pods-memorydeck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = memorydeck/memorydeck.entitlements;
+				DEVELOPMENT_TEAM = 68VX4ZD8NU;
 				INFOPLIST_FILE = memorydeck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naturalportal.memorydeck;
@@ -618,6 +626,8 @@
 			baseConfigurationReference = 0FB291C4ABF31793BCF4E98C /* Pods-memorydeck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = memorydeck/memorydeck.entitlements;
+				DEVELOPMENT_TEAM = 68VX4ZD8NU;
 				INFOPLIST_FILE = memorydeck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naturalportal.memorydeck;

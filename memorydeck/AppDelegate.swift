@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //OneSignal.initWithLaunchOptions(launchOptions, appId: "")
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "aa0f8839-cf6a-42fd-968a-25b5d50dbd10")
         
         return true
     }
