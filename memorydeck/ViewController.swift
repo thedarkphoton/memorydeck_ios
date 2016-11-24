@@ -11,7 +11,7 @@ import WebKit
 import OneSignal
 import Gloss
 
-struct OneSignalData: Glossy {
+struct OneSignalData: Decodable {
     let oneSignalId: String?
     let iOSPushId: String?
     
@@ -19,18 +19,13 @@ struct OneSignalData: Glossy {
         self.oneSignalId = "oneSignalId" <~~ json
         self.iOSPushId = "iOSPushId" <~~ json
     }
-    
-    func toJSON() -> JSON? {
-        return jsonify([
-            "oneSignalId" ~~> self.oneSignalId,
-            "iOSPushId" ~~> self.iOSPushId
-            ])
-    }
 }
 
 class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler {
     
     // MARK: Properties
+    // let _domain = "https://memorydeck.herokuapp.com/"
+    let _domain = "http://192.168.1.83:5000/"
     var _oneSignalId: String!
     var _iOSPushId: String!
     var _browser: WKWebView!
@@ -42,7 +37,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
 
         UIApplication.shared.statusBarStyle = .lightContent
         view.backgroundColor = UIColor.init(red: 0.4745, green: 0.5254, blue: 0.796, alpha: 1)
-        
+    
         initBrowser()
     }
 
@@ -54,24 +49,11 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     // MARK: Browser
     func initBrowser() {
         let contentController = WKUserContentController();
-        let userScript = WKUserScript(
-            source: "redHeader()",
-            injectionTime: WKUserScriptInjectionTime.atDocumentEnd,
-            forMainFrameOnly: true
-        )
-        contentController.addUserScript(userScript)
-        contentController.add(
-            self,
-            name: "getOneSignalId"
-        )
-        contentController.add(
-            self,
-            name: "enableNotifications"
-        )
-        contentController.add(
-            self,
-            name: "disableNotifications"
-        )
+        contentController.add(self, name: "getOneSignalId")
+        contentController.add(self, name: "enableNotifications")
+        contentController.add(self, name: "disableNotifications")
+        contentController.add(self, name: "updateSession")
+        contentController.add(self, name: "log")
         
         let config = WKWebViewConfiguration()
         config.userContentController = contentController
@@ -88,9 +70,8 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         let bottomConstraint = NSLayoutConstraint(item: _browser, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
         view.addConstraints([leadingConstraint, trailingConstraint, topConstraint, bottomConstraint])
         
-//        let url = URL(string: "https://memorydeck.herokuapp.com/sessions")!
-        let url = URL(string: "http://192.168.1.83:5000/sessions")!
-        _browser.load(URLRequest(url: url))
+        let url = URL(string: "\(_domain)sessions")!
+        _browser.load(getMutableRequest(url: url) as URLRequest)
     }
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
@@ -102,7 +83,6 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     }
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        
         if(message.name == "getOneSignalId") {
             getOneSignalId()
         } else if (message.name == "enableNotifications") {
@@ -111,11 +91,36 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         } else if (message.name == "disableNotifications") {
             print("JS INTERFACE: notifications disabled")
             OneSignal.setSubscription(false)
+        } else if (message.name == "updateSession") {
+            let pref = UserDefaults.standard
+            pref.set(message.body, forKey: "session")
+            if !pref.synchronize() {
+                print("SESSION: data failed to save to preferences")
+            }
+            print("JS INTERFACE: Client side update session")
+        } else if (message.name == "log") {
+            print("JS INTERFACE: \(message.body)")
         }
+    }
+
+    func getMutableRequest(url: URL) -> NSMutableURLRequest {
+        let request = NSMutableURLRequest(url: url)
+        let pref = UserDefaults.standard
+        
+        if let json_string = pref.object(forKey: "session") as! String! {
+            if let data = json_string.data(using: String.Encoding.utf8) {
+                let json = try? JSONSerialization.jsonObject(with: data, options: []) as! [String:String]
+                for (key, value) in json! {
+                    request.addValue("\(key)=\(value)", forHTTPHeaderField: "Cookie")
+                }
+            }
+        }
+        
+        return request
     }
     
     func getOneSignalId() {
-        let pref = UserDefaults.standard;
+        let pref = UserDefaults.standard
         
         if pref.object(forKey: "oneSignal") == nil {
             print("ONE SIGNAL: id was not found in preferences, acquiring id...")
@@ -145,8 +150,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
             if let json = pref.object(forKey: "oneSignal") as! JSON! {
                 let oneSignalData = OneSignalData(json: json)!
                 let oneSignalId = oneSignalData.oneSignalId!
+                let iOSPushId = oneSignalData.iOSPushId!
                 
                 print("ONE SIGNAL: id found in preferences: \(oneSignalId)")
+                print("ONE SIGNAL: iOS push id: \(iOSPushId)")
                 _browser.evaluateJavaScript("setOneSignalId('\(oneSignalId)')")
             } else {
                 print("ONE SIGNAL: There was an error retrieving data from preferences")

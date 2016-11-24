@@ -34,8 +34,7 @@ public typealias JSON = [String : Any]
 /**
 Convenience protocol for objects that can be translated from and to JSON.
 */
-public protocol Glossy: Decodable, Encodable { }
-
+	
 /**
 Enables an object to be decoded from JSON.
 */

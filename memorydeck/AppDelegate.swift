@@ -11,14 +11,24 @@ import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        OneSignal.initWithLaunchOptions(launchOptions, appId: "aa0f8839-cf6a-42fd-968a-25b5d50dbd10")
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "aa0f8839-cf6a-42fd-968a-25b5d50dbd10", handleNotificationReceived: { (notification) in
+            print("Received Notification - \(notification?.payload.notificationID)")
+        }, handleNotificationAction: { (result) in
+//            // This block gets called when the user reacts to a notification received
+//            let payload = result?.notification.payload
+//            var fullMessage = payload?.title
+//            
+//            //Try to fetch the action selected
+//            if let additionalData = payload?.additionalData, let actionSelected = additionalData["actionSelected"] as? String {
+//                fullMessage =  fullMessage! + "\nPressed ButtonId:\(actionSelected)"
+//            }
+//            print(fullMessage!)
+        }, settings: [kOSSettingsKeyAutoPrompt : true, kOSSettingsKeyInFocusDisplayOption : OSNotificationDisplayType.notification.rawValue])
         
         return true
     }
@@ -40,7 +50,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
-
-
 }
 
